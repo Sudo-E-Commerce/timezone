@@ -1,0 +1,29 @@
+{
+    "name": "sudo/timezone",
+    "description": "Timezone List",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Timezone\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Timezone\\Providers\\TimezoneServiceProvider"
+            ],
+            "aliases": {
+                "Timezone": "Sudo\\Timezone\\Facades\\TimezoneFacade"
+            }
+        }
+    }
+}
